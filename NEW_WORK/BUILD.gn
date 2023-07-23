@@ -1,0 +1,20 @@
+static_library("NEW_WORK") {
+  sources = [
+    "hal_iot_gpio_ex.c",
+    "lwip_tcp_server.c",
+    "wifi_connecter.c",
+    "main.c",
+
+  ]
+
+  include_dirs = [
+    "./",
+    "//utils/native/lite/include",
+    "//kernel/liteos_m/kal/cmsis",
+    "//base/iot_hardware/peripheral/interfaces/kits",
+    "//device/hisilicon/hispark_pegasus/sdk_liteos/include/base",
+    "//kernel/liteos_m/components/cmsis/2.0",
+    "//base/iot_hardware/interfaces/kits/wifiiot_lite",
+    "//foundation/communication/wifi_lite/interfaces/wifiservice",
+    ]
+}
